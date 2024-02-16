@@ -1,15 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button"
+
 
 export default function Home() {
   return (
     
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <Button variant="link" asChild>
+    <Link href="/login">Login</Link>
+  </Button>
+  
   );
 }
