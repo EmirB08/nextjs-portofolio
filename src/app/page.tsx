@@ -1,14 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button"
+import React from "react";
+import MainContainer from "../components/main-container";
 
-
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    
-    <Button variant="link" asChild>
-    <Link href="/login">Login</Link>
-  </Button>
-  
+    <MainContainer>
+    </MainContainer>
   );
-}
+};
+
+export default Home;
