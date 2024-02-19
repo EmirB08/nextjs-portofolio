@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 				<Link href="#contact" passHref>
 					<Button variant="link" className="text-xs md:text-sm lg:text-base">Contact</Button>
 				</Link>
-				<DropdownMenu className="md:hidden">
+				<DropdownMenu className="hidden">
             <DropdownMenuTrigger asChild>
               <Button size="icon" variant="outline">
                 <MenuIcon className="h-6 w-6" />
@@ -36,24 +36,24 @@ const Navbar: React.FC = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem>
-                <Button className="text-[#008744] hover:text-green-500 font-semibold" variant="link">
-                  About Me
-                </Button>
+              <Link href="#about" passHref>
+					<Button variant="link" className="text-xs md:text-sm lg:text-base">About Me</Button>
+				</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Button className="text-[#008744] hover:text-green-500 font-semibold" variant="link">
-                  Skills
-                </Button>
+              <Link href="#skills" passHref>
+					<Button variant="link" className="text-xs md:text-sm lg:text-base">Skills</Button>
+				</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Button className="text-[#008744] hover:text-green-500 font-semibold" variant="link">
-                  Projects
-                </Button>
+              <Link href="#projects" passHref>
+					<Button variant="link" className="text-xs md:text-sm lg:text-base">Projects</Button>
+				</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Button className="text-[#008744] hover:text-green-500 font-semibold" variant="link">
-                  CV
-                </Button>
+              <Link href="#contact" passHref>
+					<Button variant="link" className="text-xs md:text-sm lg:text-base">Contact</Button>
+				</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
