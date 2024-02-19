@@ -5,60 +5,90 @@ import { Avatar } from "@/components/ui/avatar";
 import { AvatarFallback } from "@/components/ui/avatar";
 import { AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
-import { DropdownMenuTrigger, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "@/components/ui/dropdown-menu"
+import {
+	DropdownMenuTrigger,
+	DropdownMenuItem,
+	DropdownMenuContent,
+	DropdownMenu,
+} from "@/components/ui/dropdown-menu";
 import { MenuIcon } from "lucide-react";
 
 const Navbar: React.FC = () => {
 	return (
 		<header className="flex items-center justify-between p-4">
-				<Avatar>
-					<AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-					<AvatarFallback>CN</AvatarFallback>
-				</Avatar>
-			<nav className="flex gap-4">
+			<Avatar>
+				<AvatarImage src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="@wowhead-mage" />
+				<AvatarFallback>EB</AvatarFallback>
+			</Avatar>
+			<nav className="md:flex gap-4 hidden">
 				<Link href="#about" passHref>
-					<Button variant="link" className="text-xs md:text-sm lg:text-base">About Me</Button>
+					<Button variant="link" className="text-xs md:text-sm lg:text-base">
+						About Me
+					</Button>
 				</Link>
 				<Link href="#skills" passHref>
-					<Button variant="link" className="text-xs md:text-sm lg:text-base">Skills</Button>
+					<Button variant="link" className="text-xs md:text-sm lg:text-base">
+						Skills
+					</Button>
 				</Link>
 				<Link href="#projects" passHref>
-					<Button variant="link" className="text-xs md:text-sm lg:text-base">Projects</Button>
+					<Button variant="link" className="text-xs md:text-sm lg:text-base">
+						Projects
+					</Button>
 				</Link>
 				<Link href="#contact" passHref>
-					<Button variant="link" className="text-xs md:text-sm lg:text-base">Contact</Button>
+					<Button variant="link" className="text-xs md:text-sm lg:text-base">
+						Contact
+					</Button>
 				</Link>
-				<DropdownMenu className="hidden">
-            <DropdownMenuTrigger asChild>
-              <Button size="icon" variant="outline">
-                <MenuIcon className="h-6 w-6" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>
-              <Link href="#about" passHref>
-					<Button variant="link" className="text-xs md:text-sm lg:text-base">About Me</Button>
-				</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-              <Link href="#skills" passHref>
-					<Button variant="link" className="text-xs md:text-sm lg:text-base">Skills</Button>
-				</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-              <Link href="#projects" passHref>
-					<Button variant="link" className="text-xs md:text-sm lg:text-base">Projects</Button>
-				</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-              <Link href="#contact" passHref>
-					<Button variant="link" className="text-xs md:text-sm lg:text-base">Contact</Button>
-				</Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-
 			</nav>
+      <div className="md:hidden">
+			<DropdownMenu>
+				<DropdownMenuTrigger asChild>
+					<Button size="icon" variant="outline">
+						<MenuIcon className="h-6 w-6" />
+					</Button>
+				</DropdownMenuTrigger>
+				<DropdownMenuContent>
+					<DropdownMenuItem>
+						<Link href="#about" passHref>
+							<Button
+								variant="link"
+								className="text-xs md:text-sm lg:text-base">
+								About Me
+							</Button>
+						</Link>
+					</DropdownMenuItem>
+					<DropdownMenuItem>
+						<Link href="#skills" passHref>
+							<Button
+								variant="link"
+								className="text-xs md:text-sm lg:text-base">
+								Skills
+							</Button>
+						</Link>
+					</DropdownMenuItem>
+					<DropdownMenuItem>
+						<Link href="#projects" passHref>
+							<Button
+								variant="link"
+								className="text-xs md:text-sm lg:text-base">
+								Projects
+							</Button>
+						</Link>
+					</DropdownMenuItem>
+					<DropdownMenuItem>
+						<Link href="#contact" passHref>
+							<Button
+								variant="link"
+								className="text-xs md:text-sm lg:text-base">
+								Contact
+							</Button>
+						</Link>
+					</DropdownMenuItem>
+				</DropdownMenuContent>
+			</DropdownMenu>
+      </div>
 		</header>
 	);
 };
