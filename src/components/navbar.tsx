@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
 				<AvatarImage src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="@wowhead-mage" />
 				<AvatarFallback>EB</AvatarFallback>
 			</Avatar>
-			<nav className="md:flex gap-4 hidden">
+			<nav className="md:flex gap-4 hidden text-glossy">
 				<Link href="#about" passHref>
 					<Button variant="link" className="text-xs md:text-sm lg:text-base">
 						About Me
