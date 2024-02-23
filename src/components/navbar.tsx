@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
 	return (
 		<header className="flex items-center justify-between pb-20">
 			<Avatar>
-				<AvatarImage src="https://www.svgrepo.com/show/327408/logo-vercel.svg" alt="vercel-logo" />
+				<AvatarImage src="https://static.firecore.com/images/infuse/infuse-icon_2x.png" alt="vercel-logo" />
 				<AvatarFallback>EB</AvatarFallback>
 			</Avatar>
 			<nav className="md:flex gap-4 hidden text-glossy">

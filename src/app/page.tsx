@@ -2,16 +2,11 @@ import React from "react";
 import MainContainer from "../components/main-container";
 import Navbar from "@/components/navbar";
 import { ModeToggle } from "@/components/mode-toggle";
-import {
-	LinkedInLogoIcon,
-	TwitterLogoIcon,
-	DiscordLogoIcon,
-	InstagramLogoIcon,
-	GitHubLogoIcon,
-} from "@radix-ui/react-icons";
+import Projects from "@/components/projects";
 import { SkillsAccordion } from "@/components/accordion";
 import { Separator } from "@/components/ui/separator";
 import ContactForm from "@/components/contact-form";
+
 
 const Home: React.FC = () => {
 	return (
@@ -37,6 +32,7 @@ const Home: React.FC = () => {
         <h2 className="text-4xl text-glossy font-bold mb-1 mt-32 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x">
 					Projects
 				</h2>
+        <Projects />
         </div>
         <ContactForm />
 			</MainContainer>
