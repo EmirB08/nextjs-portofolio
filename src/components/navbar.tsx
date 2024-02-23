@@ -15,9 +15,9 @@ import { MenuIcon } from "lucide-react";
 
 const Navbar: React.FC = () => {
 	return (
-		<header className="flex items-center justify-between p-4">
+		<header className="flex items-center justify-between pb-20">
 			<Avatar>
-				<AvatarImage src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="@wowhead-mage" />
+				<AvatarImage src="https://www.svgrepo.com/show/361653/vercel-logo.svg" alt="vercel-logo" />
 				<AvatarFallback>EB</AvatarFallback>
 			</Avatar>
 			<nav className="md:flex gap-4 hidden text-glossy">
