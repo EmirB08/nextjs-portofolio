@@ -11,6 +11,7 @@ import {
 } from "@radix-ui/react-icons";
 import { SkillsAccordion } from "@/components/accordion";
 import { Separator } from "@/components/ui/separator";
+import ContactForm from "@/components/contact-form";
 
 const Home: React.FC = () => {
 	return (
@@ -37,6 +38,7 @@ const Home: React.FC = () => {
 					Projects
 				</h2>
         </div>
+        <ContactForm />
 			</MainContainer>
 		</>
 	);
