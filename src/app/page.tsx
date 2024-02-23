@@ -10,11 +10,12 @@ import {
 	GitHubLogoIcon,
 } from "@radix-ui/react-icons";
 import { SkillsAccordion } from "@/components/accordion";
+import { Separator } from "@/components/ui/separator";
 
 const Home: React.FC = () => {
 	return (
 		<>
-    <span className="fixed top-6 right-6">
+    <span className="fixed top-0 right-0">
 			<ModeToggle />
     </span>
 			<MainContainer>
@@ -23,19 +24,9 @@ const Home: React.FC = () => {
 				<h2 className="text-4xl text-glossy font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x">
 					Emir Baftiarovic - Front End Developer
 				</h2>
-				<div className="flex justify-start gap-2 mb-1">
-					<DiscordLogoIcon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400  dark:group-hover:fill-zinc-300" />
-					<LinkedInLogoIcon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400  dark:group-hover:fill-zinc-300" />
-					<InstagramLogoIcon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400  dark:group-hover:fill-zinc-300" />
-					<GitHubLogoIcon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400  dark:group-hover:fill-zinc-300" />
-					<TwitterLogoIcon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400  dark:group-hover:fill-zinc-300" />
-				</div>
 				<p className="text-xs md:text-sm lg:text-base mt-6 text-zinc-600 dark:text-zinc-400 mb-32 font-light">
-					Jeg er interessert i både front-end og back-end og jobber nå med å få
-					bedre forståelse for back-end med frameworks som Next.js/Express.js og
-					med UI frameworks som JoyUI, Radix og Shadcn/ui for front-end design.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatum consequatur saepe nesciunt eius distinctio voluptas assumenda eos fugit consectetur incidunt suscipit explicabo temporibus maiores laborum, quasi harum alias sapiente nemo itaque repudiandae voluptate quis. Id alias sunt velit molestias, porro soluta, corrupti reiciendis, quibusdam consequuntur laboriosam molestiae perspiciatis quasi.
 				</p>
-
         <h2 className="text-4xl text-glossy font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x">
 					Skills
 				</h2>
