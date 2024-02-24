@@ -29,7 +29,7 @@ const Home: React.FC = () => {
         <SkillsAccordion />
         
         <div className="mt-32">
-        <h2 className="text-4xl text-glossy font-bold mb-1 mt-32 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x">
+        <h2 className="text-4xl text-glossy font-bold mt-32 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x mb-4">
 					Projects
 				</h2>
         <Projects />
