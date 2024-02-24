@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import { useForm } from "@formspree/react";
 
 const ContactForm = () => {
-const formId = process.env.NEXT_PUBLIC_FORM || "";
-const [state, handleSubmit] = useForm(formId);
+	const formId = process.env.NEXT_PUBLIC_FORM || "";
+	const [state, handleSubmit] = useForm(formId);
 
 	return (
 		<div className="space-y-8">
@@ -40,13 +40,11 @@ const [state, handleSubmit] = useForm(formId);
 							className="min-h-[100px]"
 							id="message"
 							placeholder="Enter your message"
-              name="message"
+							name="message"
 						/>
 					</div>
 
-					<Button type="submit">
-						Submit
-					</Button>
+					<Button type="submit">Submit</Button>
 				</div>
 			</form>
 		</div>
