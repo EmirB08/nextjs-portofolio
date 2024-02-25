@@ -5,43 +5,57 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useForm } from "@formspree/react";
 import { useToast } from "@/components/ui/use-toast";
+import React, { useEffect } from 'react';
 
 const ContactForm = () => {
-	const formId = process.env.NEXT_PUBLIC_FORM || "";
-	const [state, handleSubmit] = useForm(formId);
-	const { toast } = useToast();
+    const formId = process.env.NEXT_PUBLIC_FORM || "";
+    const [state, handleSubmit] = useForm(formId);
+    const { toast } = useToast();
+
+useEffect(() => {
+	if (state.succeeded) {
+		toast({
+			variant: "default",
+			title: "Success!",
+			description: "Your message has been sent successfully.",
+		});
+		const nameElement = document.getElementById('name') as HTMLInputElement;
+		const emailElement = document.getElementById('email') as HTMLInputElement;
+		const messageElement = document.getElementById('message') as HTMLInputElement;
+		if (nameElement) nameElement.value = '';
+		if (emailElement) emailElement.value = '';
+		if (messageElement) messageElement.value = '';
+	}
+}, [state.succeeded, toast]);
 
 	const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-
 		const form = e.currentTarget;
-		const name = form.name.valueOf;
-		const email = form.email.value;
-		const message = form.message.value;
-
+	
+		const nameElement = form.elements.namedItem('name') as HTMLInputElement | null;
+		const emailElement = form.elements.namedItem('email') as HTMLInputElement | null;
+		const messageElement = form.elements.namedItem('message') as HTMLInputElement | null;
+		const name = nameElement ? nameElement.value : '';
+		const email = emailElement ? emailElement.value : '';
+		const message = messageElement ? messageElement.value : '';
+	
 		if (!name || !email || !message) {
-			// If any field is empty, show a warning toast
 			toast({
-				variant: "destructive", // Adjust based on your theme or preference
+				variant: "default",
 				title: "Missing Information",
 				description: "Please fill out all fields before submitting.",
 			});
 			return;
 		}
-
-		// Manually trigger the handleSubmit function provided by useForm
-		await handleSubmit(e);
-	};
-
-	// Effectively listen for form submission state changes
-	if (state.succeeded) {
-		toast({
-			variant: "default", // Use appropriate variant
-			title: "Success!",
-			description: "Your message has been sent successfully.",
-		});
-	}
 	
+		handleSubmit(e).then(() => {
+			if (state.succeeded) {
+				if (nameElement) nameElement.value = '';
+				if (emailElement) emailElement.value = '';
+				if (messageElement) messageElement.value = '';
+			}
+		});
+	};
 
 	return (
 		<div className="space-y-8">
@@ -53,7 +67,8 @@ const ContactForm = () => {
 					Send me an e-mail or contact me on G or L.
 				</p>
 			</div>
-			<form onSubmit={handleSubmit}>
+			<form onSubmit={onSubmit}>
+
 				<div className="space-y-4">
 					<div className="space-y-2">
 						<Label htmlFor="name">Name</Label>
@@ -85,4 +100,4 @@ const ContactForm = () => {
 	);
 };
 
-export default ContactForm;
+export default ContactForm
