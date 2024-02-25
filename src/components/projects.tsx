@@ -2,8 +2,6 @@ import {
 	Card,
 	CardContent,
 	CardDescription,
-	CardFooter,
-	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
@@ -16,7 +14,6 @@ export default function Projects() {
 	return (
 		<main>
 			<div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-
 				<Card className="h-full flex flex-col">
 					<Image
 						alt="Test App"
@@ -29,7 +26,10 @@ export default function Projects() {
 					<CardContent className="space-y-2 flex-grow mt-3">
 						<CardTitle>Test Title</CardTitle>
 						<CardDescription>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea, laboriosam mollitia quisquam debitis molestiae dolor officia corporis quas possimus consequatur!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+							fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea,
+							laboriosam mollitia quisquam debitis molestiae dolor officia
+							corporis quas possimus consequatur!
 						</CardDescription>
 					</CardContent>
 					<div className="flex space-x-2 p-4">
@@ -54,7 +54,10 @@ export default function Projects() {
 					<CardContent className="space-y-2 flex-grow mt-3">
 						<CardTitle>Test Title</CardTitle>
 						<CardDescription>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea, laboriosam mollitia quisquam debitis molestiae dolor officia corporis quas possimus consequatur!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+							fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea,
+							laboriosam mollitia quisquam debitis molestiae dolor officia
+							corporis quas possimus consequatur!
 						</CardDescription>
 					</CardContent>
 					<div className="flex space-x-2 p-4">
@@ -79,7 +82,10 @@ export default function Projects() {
 					<CardContent className="space-y-2 flex-grow mt-3">
 						<CardTitle>Test Title</CardTitle>
 						<CardDescription>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea, laboriosam mollitia quisquam debitis molestiae dolor officia corporis quas possimus consequatur!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+							fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea,
+							laboriosam mollitia quisquam debitis molestiae dolor officia
+							corporis quas possimus consequatur!
 						</CardDescription>
 					</CardContent>
 					<div className="flex space-x-2 p-4">
@@ -104,7 +110,10 @@ export default function Projects() {
 					<CardContent className="space-y-2 flex-grow mt-3">
 						<CardTitle>Test Title</CardTitle>
 						<CardDescription>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea, laboriosam mollitia quisquam debitis molestiae dolor officia corporis quas possimus consequatur!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+							fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea,
+							laboriosam mollitia quisquam debitis molestiae dolor officia
+							corporis quas possimus consequatur!
 						</CardDescription>
 					</CardContent>
 					<div className="flex space-x-2 p-4">
@@ -129,7 +138,10 @@ export default function Projects() {
 					<CardContent className="space-y-2 flex-grow mt-3">
 						<CardTitle>Test Title</CardTitle>
 						<CardDescription>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea, laboriosam mollitia quisquam debitis molestiae dolor officia corporis quas possimus consequatur!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+							fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea,
+							laboriosam mollitia quisquam debitis molestiae dolor officia
+							corporis quas possimus consequatur!
 						</CardDescription>
 					</CardContent>
 					<div className="flex space-x-2 p-4">
@@ -154,7 +166,10 @@ export default function Projects() {
 					<CardContent className="space-y-2 flex-grow mt-3">
 						<CardTitle>Test Title</CardTitle>
 						<CardDescription>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea, laboriosam mollitia quisquam debitis molestiae dolor officia corporis quas possimus consequatur!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+							fugit nostrum ipsa, aperiam, iusto sunt voluptas error labore ea,
+							laboriosam mollitia quisquam debitis molestiae dolor officia
+							corporis quas possimus consequatur!
 						</CardDescription>
 					</CardContent>
 					<div className="flex space-x-2 p-4">
@@ -166,9 +181,6 @@ export default function Projects() {
 						</Link>
 					</div>
 				</Card>
-
-				
-				
 			</div>
 		</main>
 	);
