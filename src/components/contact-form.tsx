@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useForm } from "@formspree/react";
 import { useToast } from "@/components/ui/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 import React, { useEffect } from 'react';
 
 const ContactForm = () => {
@@ -41,9 +42,10 @@ useEffect(() => {
 	
 		if (!name || !email || !message) {
 			toast({
-				variant: "default",
+				variant: "destructive",
 				title: "Missing Information",
 				description: "Please fill out all fields before submitting.",
+				action: <ToastAction altText="Try again">Try again</ToastAction>,
 			});
 			return;
 		}
