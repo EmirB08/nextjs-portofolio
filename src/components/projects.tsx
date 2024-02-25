@@ -15,15 +15,15 @@ import { Separator } from "@/components/ui/separator";
 export default function Projects() {
 	return (
 		<main>
-			<div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+			<div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
 				<Card className="h-full flex flex-col">
 					<Image
 						alt="Test App"
 						className="aspect-square object-fit w-full p-10"
-						height="200"
+						height="150"
 						src="vercel.svg"
-						width="200"
+						width="150"
 					/>
 					<Separator />
 					<CardContent className="space-y-2 flex-grow mt-3">
