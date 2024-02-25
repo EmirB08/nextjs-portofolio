@@ -4,10 +4,44 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useForm } from "@formspree/react";
+import { useToast } from "@/components/ui/use-toast";
 
 const ContactForm = () => {
 	const formId = process.env.NEXT_PUBLIC_FORM || "";
 	const [state, handleSubmit] = useForm(formId);
+	const { toast } = useToast();
+
+	const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+
+		const form = e.currentTarget;
+		const name = form.name.valueOf;
+		const email = form.email.value;
+		const message = form.message.value;
+
+		if (!name || !email || !message) {
+			// If any field is empty, show a warning toast
+			toast({
+				variant: "destructive", // Adjust based on your theme or preference
+				title: "Missing Information",
+				description: "Please fill out all fields before submitting.",
+			});
+			return;
+		}
+
+		// Manually trigger the handleSubmit function provided by useForm
+		await handleSubmit(e);
+	};
+
+	// Effectively listen for form submission state changes
+	if (state.succeeded) {
+		toast({
+			variant: "default", // Use appropriate variant
+			title: "Success!",
+			description: "Your message has been sent successfully.",
+		});
+	}
+	
 
 	return (
 		<div className="space-y-8">
