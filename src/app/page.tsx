@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 			<MainContainer>
 				<Navbar />
 
-				<h2 className="text-4xl text-glossy font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x">
+				<h2 className="text-4xl font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x">
 					Emir Baftiarovic - Front End Developer
 				</h2>
 				<p className=" text-shadow text-xs md:text-sm lg:text-base mt-6 text-zinc-600 dark:text-zinc-400 mb-32 font-light">
