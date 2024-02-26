@@ -63,7 +63,26 @@ const ContactForm: React.FC = () => {
 					Contact
 				</h2>
 				<p className="text-gray-500 dark:text-gray-400">
-					Send me an e-mail or contact me on G or L.
+					Send me a message or contact me on
+					<a
+						href="https://github.com/EmirB08"
+						className="hover:text-gray-700 dark:hover:text-gray-300 mx-1 relative underline"
+						style={{
+							textDecorationThickness: "1px",
+							textUnderlineOffset: "4px",
+						}}>
+						GitHub
+					</a>
+					or
+					<a
+						href="https://linkedin.com"
+						className="hover:text-gray-700 dark:hover:text-gray-300 mx-1 relative underline"
+						style={{
+							textDecorationThickness: "1px",
+							textUnderlineOffset: "4px",
+						}}>
+						LinkedIn.
+					</a>
 				</p>
 			</div>
 			<form onSubmit={onSubmit}>
