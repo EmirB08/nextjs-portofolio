@@ -15,11 +15,8 @@ const Projects = () => {
                                 <Image
                                     alt="Test App"
                                     className="object-fit w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
-                                    height="200"
-                                    src="/media/gondor.png"
-
-                                    width="200"
-                                    layout="responsive"
+                                    src="/media/Enhetsregisteret.png"
+                                    layout="fill"
                                 />
                             </div>
                         </Link>
