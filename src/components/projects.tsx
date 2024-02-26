@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 const Projects = () => {
     return (
         <main>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[...Array(6)].map((_, index) => (
                     <Card key={index} className="h-full flex flex-col hover:bg-gray-100 dark:hover:bg-zinc-900 transition-colors duration-300 overflow-hidden">
                         <Link href="https://vercel.com" passHref>
