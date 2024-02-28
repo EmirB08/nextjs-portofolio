@@ -15,7 +15,7 @@ const Home: React.FC = () => {
 			</span>
 			<MainContainer>
 				<Navbar />
-				<h2 className="text-4xl font-bold mb-1 bg-clip-text text-transparen text-pink-600">
+				<h2 className="text-4xl font-bold mb-1 bg-clip-text text-pink-600">
 					Emir Baftiarovic - Front End Developer
 				</h2>
 				<p className="text-xs md:text-sm lg:text-base mt-6 text-zinc-600 dark:text-zinc-400 mb-32 font-light">
@@ -27,13 +27,13 @@ const Home: React.FC = () => {
 					reiciendis, quibusdam consequuntur laboriosam molestiae perspiciatis
 					quasi.
 				</p>
-				<h2 className="text-4xl text-glossy font-bold mb-1 bg-clip-text text-transparent text-pink-600">
+				<h2 className="text-4xl text-glossy font-bold mb-1 bg-clip-text text-pink-600">
 					Skills
 				</h2>
 				<SkillsAccordion />
 
 				<div className="mt-32">
-					<h2 className="text-4xl text-glossy font-bold mt-32 bg-clip-text text-transparent text-pink-600 mb-4">
+					<h2 className="text-4xl text-glossy font-bold mt-32 bg-clip-text text-pink-600 mb-4">
 						Projects
 					</h2>
 					<Projects />
