@@ -11,12 +11,10 @@ const SkillsAccordion = () => (
 			<AccordionTrigger>Languages</AccordionTrigger>
 			<AccordionContent>
 				<p className="text-zinc-600 dark:text-zinc-400 font-light text-xs md:text-sm">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-					tempora aliquid sint perspiciatis, sequi ex. Deleniti ullam nihil
-					soluta minus sunt similique perferendis excepturi reiciendis atque
-					nesciunt natus illum at culpa hic architecto, tempore cumque assumenda
-					accusamus dicta omnis pariatur doloremque neque voluptates. Sapiente
-					at necessitatibus accusantium saepe architecto officia!
+					Experienced with JavaScript, but transitioning to TypeScript for better type safety.
+					Learning C# as I am interested in back-end development. I am also spending
+					some time with Lua in my free time for WoW Addon development.
+					
 				</p>
 			</AccordionContent>
 		</AccordionItem>
@@ -24,12 +22,7 @@ const SkillsAccordion = () => (
 			<AccordionTrigger>Frameworks</AccordionTrigger>
 			<AccordionContent>
 				<p className="text-zinc-600 dark:text-zinc-400 font-light text-xs md:text-sm">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-					eligendi distinctio dolorem est a provident facere voluptas ea modi
-					magni, asperiores esse eum, quasi unde odio tenetur cumque minus quia
-					sapiente dolore minima et dolorum odit. Temporibus aperiam commodi
-					ullam, voluptate laudantium non veniam laboriosam maxime, perferendis
-					nobis autem dolorem.
+					Experienced with React/Vite and Next.js for front-end development. Learning ASP.NET/.NET for back-end development.
 				</p>
 			</AccordionContent>
 		</AccordionItem>
@@ -37,12 +30,8 @@ const SkillsAccordion = () => (
 			<AccordionTrigger>UX/UI</AccordionTrigger>
 			<AccordionContent>
 				<p className="text-zinc-600 dark:text-zinc-400 font-light text-xs md:text-sm">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-					facilis quidem molestias quisquam impedit alias neque fuga dolorum
-					dicta tempora sed dolor, ipsa sit voluptatibus harum odit ab accusamus
-					eligendi omnis. Accusamus, numquam dolore culpa ducimus maiores
-					exercitationem dolor quo nam sint nisi repellat nesciunt harum totam
-					ullam nobis voluptate.
+					Have a good understanding of UX/UI principles. Experienced with design in Figma and using component libraries like
+					MUI, JoyUI, and shadcn/UI for responsive web design. Using Tailwind CSS for CSS-in-JS.
 				</p>
 			</AccordionContent>
 		</AccordionItem>

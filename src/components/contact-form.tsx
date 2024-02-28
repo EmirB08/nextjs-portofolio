@@ -95,7 +95,7 @@ const ContactForm: React.FC = () => {
 					</a>
 				</p>
 			</div>
-			<form onSubmit={onSubmit}>
+			<form onSubmit={onSubmit} method="POST">
 				<div className="space-y-4">
 					<div className="space-y-2">
 						<Label htmlFor="name">Name</Label>

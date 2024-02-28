@@ -69,7 +69,7 @@ const Projects = () => {
 				{projectList.map((project, id) => (
 					<Card
 						key={id}
-						className="h-full flex flex-col hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors duration-300 overflow-hidden">
+						className="h-full flex flex-col hover:bg-gray-100 dark:hover:bg-slate-900 transition-colors duration-300 overflow-hidden">
 						<Link href={project.projectLink} passHref target="_blank">
 							<div className="relative flex aspect-square w-full group cursor-pointer justify-center items-center overflow-hidden">
 								<Image
