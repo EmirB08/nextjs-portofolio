@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { useEffect } from "react";
 import { Label } from "@/components/ui/label";
@@ -59,7 +59,7 @@ const ContactForm: React.FC = () => {
 	return (
 		<div className="space-y-8">
 			<div className="space-y-2">
-				<h2 className="text-4xl text-glossy font-bold mb-1 mt-32 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x">
+				<h2 className="text-4xl text-glossy font-bold mb-1 mt-32 bg-clip-text text-transparent text-pink-600">
 					Contact
 				</h2>
 				<p className="text-gray-500 dark:text-gray-400">

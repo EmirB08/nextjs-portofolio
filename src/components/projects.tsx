@@ -13,7 +13,7 @@ const projectList = [
     {   
         id: 1,
 		title: "Enhetsregisteret",
-		description: "A responsive recreation of Enhetsregisteret created with React/Vite and JoyUI.",
+		description: "A recreation of Enhetsregisteret API created with React/Vite and JoyUI.",
 		imageSrc: "/media/Enhetsregisteret.png",
 		projectLink: "https://cool-gumption-a40c50.netlify.app/",
 		githubLink: "https://github.com/EmirB08/vite-react-project-3",
@@ -28,8 +28,8 @@ const projectList = [
 	},
 	{   
         id: 3,
-		title: "API Project",
-		description: "Group leader on a project where we created a TV show database using the TVMaze API.",
+		title: "API Project - TV",
+		description: "Project leader on a project where we created a TV show database using the TVMaze API.",
 		imageSrc: "/media/API.png",
         projectLink: "https://emirb08.github.io/gruppeprosjekt-api/",
 		githubLink: "https://github.com/EmirB08/gruppeprosjekt-api",
@@ -38,27 +38,28 @@ const projectList = [
     {   
         id: 4,
 		title: "Quiz Project",
-		description: "Group leader on a project where we created a quiz.",
+		description: "Project leader on a project where we created a HTML/CSS/JS quiz.",
 		imageSrc: "/media/Quiz.png",
 		projectLink: "https://emirb08.github.io/gruppeprosjekt-quiz/",
 		githubLink: "https://github.com/EmirB08/gruppeprosjekt-quiz",
 	},
     {   
         id: 5,
+		title: "API Project - News",
+		description: "Project leader on a webpage where we designed a news site using an API to display Google News.",
+		imageSrc: "/media/News.png",
+		projectLink: "https://emirb08.github.io/gruppeprosjekt-mini/",
+		githubLink: "https://github.com/EmirB08/gruppeprosjekt-mini",
+	},
+    {   
+        id: 6,
 		title: "Soundboard",
 		description: "A soundboard made with JavaScript.",
 		imageSrc: "/media/RMP.png",
 		projectLink: "https://emirb08.github.io/RMP/",
 		githubLink: "https://github.com/EmirB08/RMP",
 	},
-    {   
-        id: 6,
-		title: "CTA Page",
-		description: "A CTA page for a travel destination.",
-		imageSrc: "/media/CTA.png",
-		projectLink: "https://emirb08.github.io/prosjektuke-host-cat/",
-		githubLink: "https://github.com/EmirB08/prosjektuke-host-cat",
-	},
+    
 	
 ];
 
