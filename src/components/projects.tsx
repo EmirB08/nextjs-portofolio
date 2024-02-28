@@ -70,7 +70,7 @@ const Projects = () => {
 					<Card
 						key={id}
 						className="h-full flex flex-col hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors duration-300 overflow-hidden">
-						<Link href={project.projectLink} passHref>
+						<Link href={project.projectLink} passHref target="_blank">
 							<div className="relative flex aspect-square w-full group cursor-pointer justify-center items-center overflow-hidden">
 								<Image
 									alt={project.title}
@@ -87,7 +87,7 @@ const Projects = () => {
 						</CardContent>
 						<div className="flex space-x-2 p-4">
 							{project.githubLink && (
-								<Link href={project.githubLink} passHref>
+								<Link href={project.githubLink} passHref target="_blank">
 									<GitHubLogoIcon className="h-6 w-6 text-zinc-600 dark:text-zinc-400 cursor-pointer" />
 								</Link>
 							)}

@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
 				<p className="text-gray-500 dark:text-gray-400">
 					Send me a message or contact me on
 					<a
-						href="https://github.com/EmirB08"
+						href="https://github.com/EmirB08" target="_blank"
 						className="hover:text-gray-700 dark:hover:text-gray-300 mx-1 relative underline"
 						style={{
 							textDecorationThickness: "1px",
@@ -73,9 +73,19 @@ const ContactForm: React.FC = () => {
 						}}>
 						GitHub
 					</a>
+					,
+					<a
+						href="https://linkedin.com" target="_blank"
+						className="hover:text-gray-700 dark:hover:text-gray-300 mx-1 relative underline"
+						style={{
+							textDecorationThickness: "1px",
+							textUnderlineOffset: "4px",
+						}}>
+						Discord
+					</a>
 					or
 					<a
-						href="https://linkedin.com"
+						href="https://linkedin.com" target="_blank"
 						className="hover:text-gray-700 dark:hover:text-gray-300 mx-1 relative underline"
 						style={{
 							textDecorationThickness: "1px",
