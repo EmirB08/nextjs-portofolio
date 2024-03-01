@@ -63,14 +63,12 @@ const ContactForm: React.FC = () => {
 				<p className="text-gray-800 dark:text-gray-300 font-light">
 					Send me a message or contact me on:
 				</p>
-				<ul
-					className="p-0 list-none"
-					style={{ listStyleType: "square", paddingLeft: "20px" }}>
-					<li>
+				<ul className="list-none p-0">
+					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-pink-600 before:rounded-sm">
 						<a
 							href="https://github.com/EmirB08"
 							target="_blank"
-							className=" mx-1 relative hover:underline"
+							className="mx-1 relative hover:underline"
 							style={{
 								textDecorationThickness: "1px",
 								textUnderlineOffset: "4px",
@@ -78,11 +76,11 @@ const ContactForm: React.FC = () => {
 							GitHub
 						</a>
 					</li>
-					<li>
+					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-pink-600 before:rounded-sm">
 						<a
-							href="https://discordapp.com/users/emirb08"
+							href="https://linkedin.com"
 							target="_blank"
-							className=" mx-1 relative hover:underline"
+							className="mx-1 relative hover:underline"
 							style={{
 								textDecorationThickness: "1px",
 								textUnderlineOffset: "4px",
@@ -90,11 +88,11 @@ const ContactForm: React.FC = () => {
 							Discord
 						</a>
 					</li>
-					<li>
+					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-pink-600 before:rounded-sm">
 						<a
 							href="https://linkedin.com"
 							target="_blank"
-							className=" mx-1 relative hover:underline"
+							className="mx-1 relative hover:underline"
 							style={{
 								textDecorationThickness: "1px",
 								textUnderlineOffset: "4px",

@@ -78,6 +78,7 @@ const Projects = () => {
 									className="object-fit w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
 									src={project.imageSrc}
 									layout="fill"
+									sizes="50%"
 								/>
 							</div>
 						</Link>

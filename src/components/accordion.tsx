@@ -10,7 +10,7 @@ const SkillsAccordion = () => (
 		<AccordionItem value="item-1">
 			<AccordionTrigger>Languages</AccordionTrigger>
 			<AccordionContent>
-				<p className="text-gray-800 dark:text-gray-300 font-light text-xs md:text-sm">
+				<p className="text-gray-800 dark:text-gray-300 font-light text-md">
 					Experienced with{" "}
 					<span className="text-pink-600 font-medium">JavaScript</span>
 					,transitioning to{" "}
@@ -26,7 +26,7 @@ const SkillsAccordion = () => (
 		<AccordionItem value="item-2">
 			<AccordionTrigger>Frameworks</AccordionTrigger>
 			<AccordionContent>
-				<p className="text-gray-800 dark:text-gray-300 font-light text-xs md:text-sm">
+				<p className="text-gray-800 dark:text-gray-300 font-light text-">
 					Experienced with{" "}
 					<span className="text-pink-600 font-medium">React/Vite</span> and{" "}
 					<span className="text-pink-600 font-medium">Next.js</span> for
@@ -40,7 +40,7 @@ const SkillsAccordion = () => (
 		<AccordionItem value="item-3">
 			<AccordionTrigger>UX/UI</AccordionTrigger>
 			<AccordionContent>
-				<p className="text-gray-800 dark:text-gray-300 font-light text-xs md:text-sm">
+				<p className="text-gray-800 dark:text-gray-300 font-light text-md">
 					Have a good understanding of UX/UI principles. Experienced with design
 					in <span className="text-pink-600 font-medium">Figma</span> and using
 					component libraries like{" "}
