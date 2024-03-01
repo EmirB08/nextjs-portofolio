@@ -26,7 +26,7 @@ const Home: React.FC = () => {
 					maiores laborum, quasi harum alias sapiente nemo itaque repudiandae
 					voluptate quis. Id alias sunt velit molestias, porro soluta, corrupti
 					reiciendis, quibusdam consequuntur laboriosam molestiae perspiciatis
-					quasi.
+					quesi.
 				</p>
 				<h2 id="skills" className="text-4xl text-glossy font-bold mb-1 bg-clip-text text-pink-600">
 					Skills
