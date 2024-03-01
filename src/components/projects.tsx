@@ -29,7 +29,7 @@ const projectList = [
 	{   
         id: 3,
 		title: "API Project - TV",
-		description: "Project leader on a project where we created a TV show database using the TVMaze API.",
+		description: "Project leader on a project where we created a TV shows database using the TVMaze API.",
 		imageSrc: "/media/API.png",
         projectLink: "https://emirb08.github.io/gruppeprosjekt-api/",
 		githubLink: "https://github.com/EmirB08/gruppeprosjekt-api",
@@ -83,7 +83,7 @@ const Projects = () => {
 							</div>
 						</Link>
 						<Separator />
-						<CardContent className="space-y-2 flex-grow mt-3">
+						<CardContent className="space-y-2 flex-grow mt-4">
 							<CardTitle>{project.title}</CardTitle>
 							<CardDescription>{project.description}</CardDescription>
 						</CardContent>
