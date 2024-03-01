@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect } from "react";
 import { Label } from "@/components/ui/label";
@@ -59,41 +59,50 @@ const ContactForm: React.FC = () => {
 	return (
 		<div className="space-y-8">
 			<div className="space-y-2">
-				<h2 className="text-4xl font-bold mb-1 mt-32 text-pink-600">
-					Contact
-				</h2>
-				<p className="text-gray-500 dark:text-gray-400">
-					Send me a message or contact me on
-					<a
-						href="https://github.com/EmirB08" target="_blank"
-						className="hover:text-gray-700 dark:hover:text-gray-300 mx-1 relative underline"
-						style={{
-							textDecorationThickness: "1px",
-							textUnderlineOffset: "4px",
-						}}>
-						GitHub
-					</a>
-					,
-					<a
-						href="https://linkedin.com" target="_blank"
-						className="hover:text-gray-700 dark:hover:text-gray-300 mx-1 relative underline"
-						style={{
-							textDecorationThickness: "1px",
-							textUnderlineOffset: "4px",
-						}}>
-						Discord
-					</a>
-					or
-					<a
-						href="https://linkedin.com" target="_blank"
-						className="hover:text-gray-700 dark:hover:text-gray-300 mx-1 relative underline"
-						style={{
-							textDecorationThickness: "1px",
-							textUnderlineOffset: "4px",
-						}}>
-						LinkedIn.
-					</a>
+				<h2 className="text-4xl font-bold mb-1 mt-32 text-pink-600">Contact</h2>
+				<p className="text-gray-800 dark:text-gray-300 font-light">
+					Send me a message or contact me on:
 				</p>
+				<ul
+					className="p-0 list-none"
+					style={{ listStyleType: "square", paddingLeft: "20px" }}>
+					<li>
+						<a
+							href="https://github.com/EmirB08"
+							target="_blank"
+							className=" mx-1 relative hover:underline"
+							style={{
+								textDecorationThickness: "1px",
+								textUnderlineOffset: "4px",
+							}}>
+							GitHub
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://discordapp.com/users/emirb08"
+							target="_blank"
+							className=" mx-1 relative hover:underline"
+							style={{
+								textDecorationThickness: "1px",
+								textUnderlineOffset: "4px",
+							}}>
+							Discord
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://linkedin.com"
+							target="_blank"
+							className=" mx-1 relative hover:underline"
+							style={{
+								textDecorationThickness: "1px",
+								textUnderlineOffset: "4px",
+							}}>
+							LinkedIn
+						</a>
+					</li>
+				</ul>
 			</div>
 			<form onSubmit={onSubmit} method="POST">
 				<div className="space-y-4">

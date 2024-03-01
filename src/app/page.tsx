@@ -18,7 +18,7 @@ const Home: React.FC = () => {
 				<h2 className="text-4xl font-bold mb-1 bg-clip-text text-pink-600">
 					Emir Baftiarovic - Front End Developer
 				</h2>
-				<p className="text-xs md:text-sm lg:text-base mt-6 text-zinc-600 dark:text-zinc-400 mb-32 font-light">
+				<p className="text-xs md:text-sm lg:text-base mt-6 text-gray-800 dark:text-gray-300 mb-32 font-light">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
 					voluptatum consequatur saepe nesciunt eius distinctio voluptas
 					assumenda eos fugit consectetur incidunt suscipit explicabo temporibus
