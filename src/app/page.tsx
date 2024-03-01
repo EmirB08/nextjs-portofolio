@@ -10,15 +10,16 @@ import ContactForm from "@/components/contact-form";
 const Home: React.FC = () => {
 	return (
 		<>
-			<span className="fixed top-0 right-0">
-				<ModeToggle />
-			</span>
+			
 			<MainContainer>
+			<div className="absolute top-1 right-1">
+				<ModeToggle />
+			</div>
 				<Navbar />
-				<h2 className="text-4xl font-bold mb-1 bg-clip-text text-pink-600">
+				<h2 id="about" className="text-4xl font-bold mb-1 bg-clip-text text-pink-600">
 					Emir Baftiarovic - Front End Developer
 				</h2>
-				<p className="text-xs md:text-sm lg:text-base mt-6 text-gray-800 dark:text-gray-300 mb-32 font-light">
+				<p className="text-sm md:text-sm lg:text-base mt-6 text-gray-950 dark:text-gray-300 mb-32 font-light">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
 					voluptatum consequatur saepe nesciunt eius distinctio voluptas
 					assumenda eos fugit consectetur incidunt suscipit explicabo temporibus
@@ -27,13 +28,13 @@ const Home: React.FC = () => {
 					reiciendis, quibusdam consequuntur laboriosam molestiae perspiciatis
 					quasi.
 				</p>
-				<h2 className="text-4xl text-glossy font-bold mb-1 bg-clip-text text-pink-600">
+				<h2 id="skills" className="text-4xl text-glossy font-bold mb-1 bg-clip-text text-pink-600">
 					Skills
 				</h2>
 				<SkillsAccordion />
 
 				<div className="mt-32">
-					<h2 className="text-4xl text-glossy font-bold mt-32 bg-clip-text text-pink-600 mb-4">
+					<h2 id="projects" className="text-4xl text-glossy font-bold mt-32 bg-clip-text text-pink-600 mb-4">
 						Projects
 					</h2>
 					<Projects />

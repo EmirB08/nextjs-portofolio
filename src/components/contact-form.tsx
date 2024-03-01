@@ -59,8 +59,8 @@ const ContactForm: React.FC = () => {
 	return (
 		<div className="space-y-8">
 			<div className="space-y-2">
-				<h2 className="text-4xl font-bold mb-1 mt-32 text-pink-600">Contact</h2>
-				<p className="text-gray-800 dark:text-gray-300 font-light">
+				<h2 id="contact" className="text-4xl font-bold mb-1 mt-32 text-pink-600">Contact</h2>
+				<p className="text-gray-900 dark:text-gray-300 font-light">
 					Send me a message or contact me on:
 				</p>
 				<ul className="list-none p-0">

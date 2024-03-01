@@ -5,7 +5,7 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { GitHubLogoIcon, VercelLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 
@@ -75,7 +75,7 @@ const Projects = () => {
 							<div className="relative flex aspect-square w-full group cursor-pointer justify-center items-center overflow-hidden">
 								<Image
 									alt={project.title}
-									className="object-fit w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+									className="object-fit w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110 dark:brightness-75"
 									src={project.imageSrc}
 									layout="fill"
 									sizes="50%"
@@ -90,7 +90,7 @@ const Projects = () => {
 						<div className="flex space-x-2 p-4">
 							{project.githubLink && (
 								<Link href={project.githubLink} passHref target="_blank">
-									<GitHubLogoIcon className="h-6 w-6 text-zinc-600 dark:text-zinc-400 cursor-pointer" />
+									<GitHubLogoIcon className="h-6 w-6 text-stone-700 dark:text-stone-400 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110" />
 								</Link>
 							)}
 						</div>
