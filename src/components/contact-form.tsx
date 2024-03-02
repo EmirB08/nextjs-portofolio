@@ -59,12 +59,12 @@ const ContactForm: React.FC = () => {
 	return (
 		<div className="space-y-8">
 			<div className="space-y-2">
-				<h2 id="contact" className="text-4xl font-bold mb-1 mt-32 text-pink-600">Contact</h2>
+				<h2 id="contact" className="text-4xl font-bold mb-1 mt-32 text-teal-600">Contact</h2>
 				<p className="text-gray-900 dark:text-gray-300 font-light">
 					Send me a message or contact me on:
 				</p>
 				<ul className="list-none p-0">
-					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-pink-600 before:rounded-sm">
+					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-teal-600 before:rounded-sm">
 						<a
 							href="https://github.com/EmirB08"
 							target="_blank"
@@ -76,7 +76,7 @@ const ContactForm: React.FC = () => {
 							GitHub
 						</a>
 					</li>
-					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-pink-600 before:rounded-sm">
+					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-teal-600 before:rounded-sm">
 						<a
 							href="https://linkedin.com"
 							target="_blank"
@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
 							Discord
 						</a>
 					</li>
-					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-pink-600 before:rounded-sm">
+					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-teal-600 before:rounded-sm">
 						<a
 							href="https://linkedin.com"
 							target="_blank"

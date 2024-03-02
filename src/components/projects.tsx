@@ -90,7 +90,7 @@ const Projects = () => {
 						<div className="flex space-x-2 p-4">
 							{project.githubLink && (
 								<Link href={project.githubLink} passHref target="_blank">
-									<GitHubLogoIcon className="h-6 w-6 text-stone-700 dark:text-stone-400 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110" />
+									<GitHubLogoIcon className="h-6 w-6 text-teal-600 dark:text-teal-600 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110" />
 								</Link>
 							)}
 						</div>

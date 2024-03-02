@@ -25,9 +25,12 @@ const Navbar: React.FC = () => {
 
     return (
         <header className="flex items-center justify-between pb-20">
+			<div className="invisible md:visible">
             <Avatar>
-                {/* Avatar Image and Fallback */}
+			<AvatarImage src="/media/gigachadoncomputer.jpeg" />
+			<AvatarFallback>EB</AvatarFallback>
             </Avatar>
+			</div>
             <nav className="md:flex gap-4 hidden text-glossy">
                 <Button variant="link" className="text-xs md:text-sm lg:text-base" onClick={handleScroll('about')}>
                     About Me

@@ -12,13 +12,13 @@ const SkillsAccordion = () => (
 			<AccordionContent>
 				<p className="text-gray-900 dark:text-gray-300 font-light text-md">
 					Experienced with{" "}
-					<span className="text-pink-600 font-medium">JavaScript</span>
+					<span className="text-teal-600 font-medium">JavaScript</span>
 					,transitioning to{" "}
-					<span className="text-pink-600 font-medium">TypeScript</span> for
+					<span className="text-teal-600 font-medium">TypeScript</span> for
 					better type safety. Learning{" "}
-					<span className="text-pink-600 font-medium">C#</span> as I am
+					<span className="text-teal-600 font-medium">C#</span> as I am
 					interested in back-end development. I am also spending some time with{" "}
-					<span className="text-pink-600 font-medium">Lua</span> in my free time
+					<span className="text-teal-600 font-medium">Lua</span> in my free time
 					for WoW Addon development.
 				</p>
 			</AccordionContent>
@@ -28,11 +28,11 @@ const SkillsAccordion = () => (
 			<AccordionContent>
 				<p className="text-gray-900 dark:text-gray-300 font-light text-">
 					Experienced with{" "}
-					<span className="text-pink-600 font-medium">React/Vite</span> and{" "}
-					<span className="text-pink-600 font-medium">Next.js</span> for
+					<span className="text-teal-600 font-medium">React/Vite</span> and{" "}
+					<span className="text-teal-600 font-medium">Next.js</span> for
 					front-end development. Learning{" "}
-					<span className="text-pink-600 font-medium">ASP.NET/.NET</span> and{" "}
-					<span className="text-pink-600 font-medium">Express.js</span> for
+					<span className="text-teal-600 font-medium">ASP.NET/.NET</span> and{" "}
+					<span className="text-teal-600 font-medium">Express.js</span> for
 					back-end development.
 				</p>
 			</AccordionContent>
@@ -42,13 +42,13 @@ const SkillsAccordion = () => (
 			<AccordionContent>
 				<p className="text-gray-900 dark:text-gray-300 font-light text-md">
 					Have a good understanding of UX/UI principles. Experienced with design
-					in <span className="text-pink-600 font-medium">Figma</span> and using
+					in <span className="text-teal-600 font-medium">Figma</span> and using
 					component libraries like{" "}
-					<span className="text-pink-600 font-medium">MUI</span>,{" "}
-					<span className="text-pink-600 font-medium">JoyUI</span>, and{" "}
-					<span className="text-pink-600 font-medium">shadcn/ui</span> for
+					<span className="text-teal-600 font-medium">MUI</span>,{" "}
+					<span className="text-teal-600 font-medium">JoyUI</span>, and{" "}
+					<span className="text-teal-600 font-medium">shadcn/ui</span> for
 					minimalist & responsive web design. Using{" "}
-					<span className="text-pink-600 font-medium">Tailwind CSS</span> for
+					<span className="text-teal-600 font-medium">Tailwind CSS</span> for
 					CSS-in-JS.
 				</p>
 			</AccordionContent>
