@@ -66,7 +66,7 @@ const projectList = [
 const Projects = () => {
 	return (
 		<main>
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-4">
 				{projectList.map((project, id) => (
 					<Card
 						key={id}
