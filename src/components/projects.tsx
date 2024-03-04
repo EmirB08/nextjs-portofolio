@@ -83,7 +83,7 @@ const Projects = () => {
 							</div>
 						</Link>
 						<Separator />
-						<CardContent className="space-y-2 flex-grow mt-4">
+						<CardContent className="space-y-2 flex-grow mt-6">
 							<CardTitle>{project.title}</CardTitle>
 							<CardDescription>{project.description}</CardDescription>
 						</CardContent>
