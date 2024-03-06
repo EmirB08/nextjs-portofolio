@@ -7,7 +7,7 @@ import {
 
 const SkillsAccordion = () => (
 	<Accordion type="single" collapsible className="w-full">
-		<AccordionItem value="item-1" className="text-sm">
+		<AccordionItem value="item-1">
 			<AccordionTrigger>Front-end</AccordionTrigger>
 			<AccordionContent>
 				<p className="text-gray-900 dark:text-gray-300 font-light text-md">
@@ -43,7 +43,7 @@ const SkillsAccordion = () => (
 				</p>
 			</AccordionContent>
 		</AccordionItem>
-		<AccordionItem value="item-2" className="text-sm">
+		<AccordionItem value="item-2">
 			<AccordionTrigger>Back-end</AccordionTrigger>
 			<AccordionContent>
 				<p className="text-gray-900 dark:text-gray-300 font-light text-">
@@ -67,7 +67,7 @@ const SkillsAccordion = () => (
 				</p>
 			</AccordionContent>
 		</AccordionItem>
-		<AccordionItem value="item-3" className="text-sm">
+		<AccordionItem value="item-3">
 			<AccordionTrigger>Other</AccordionTrigger>
 			<AccordionContent>
 				<p className="text-gray-900 dark:text-gray-300 font-light text-md">
