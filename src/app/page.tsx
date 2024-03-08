@@ -39,10 +39,10 @@ const Home: React.FC = () => {
 					front-end kurs. Gjennom dette kurset har jeg tilegnet meg en solid
 					forståelse av verktøy som er essensielle for moderne webutvikling. Det
 					jeg har likt best har vært å jobbe med JavaScript/TypeScript og
-					React/Vite. Jeg er interessert i både front-end og back-end og jobber
-					nå med å få bedre forståelse for back-end med frameworks som
+					React/Vite. Jeg er interessert i både frontend og backend og jobber
+					nå med å få bedre forståelse for backend med frameworks som
 					Next.js/Express.js og med UI frameworks som JoyUI, Radix og Shadcn/ui
-					for front-end design.
+					for frontend design.
 				</p>
 				<h2
 					id="skills"

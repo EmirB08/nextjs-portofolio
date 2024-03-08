@@ -57,7 +57,7 @@ const projectList = [
 	{
 		id: 6,
 		title: "Soundboard",
-		description: "Et soundboard laget med JavaScript med mulighet for å laste ned de ulike lydene som kan brukes for Addon Sounds i WoW.",
+		description: "Et soundboard eksempel laget med JavaScript med mulighet for å laste ned de ulike lydene.",
 		imageSrc: "/media/RMP.png",
 		projectLink: "https://emirb08.github.io/RMP/",
 		githubLink: "https://github.com/EmirB08/RMP",

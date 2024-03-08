@@ -78,7 +78,7 @@ const ContactForm: React.FC = () => {
 					</li>
 					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 dark:before:bg-teal-600 before:bg-teal-800 before:rounded-sm">
 						<a
-							href="https://linkedin.com"
+							href="https://discordapp.com/users/EmirB08"
 							target="_blank"
 							className="mx-1 relative hover:underline"
 							style={{
@@ -106,13 +106,13 @@ const ContactForm: React.FC = () => {
 				<div className="space-y-4">
 					<div className="space-y-2">
 						<Label htmlFor="name">Navn</Label>
-						<Input id="name" placeholder="" name="name" />
+						<Input id="name" placeholder="Navn" name="name" />
 					</div>
 					<div className="space-y-2">
 						<Label htmlFor="email">Epost</Label>
 						<Input
 							id="email"
-							placeholder=""
+							placeholder="Epost"
 							type="email"
 							name="email"
 						/>
@@ -122,7 +122,7 @@ const ContactForm: React.FC = () => {
 						<Textarea
 							className="min-h-[100px]"
 							id="message"
-							placeholder=""
+							placeholder="Melding"
 							name="message"
 						/>
 					</div>
