@@ -109,10 +109,10 @@ const ContactForm: React.FC = () => {
 						<Input id="name" placeholder="Navn" name="name" />
 					</div>
 					<div className="space-y-2">
-						<Label htmlFor="email">Epost</Label>
+						<Label htmlFor="email">E-post</Label>
 						<Input
 							id="email"
-							placeholder="Epost"
+							placeholder="E-post"
 							type="email"
 							name="email"
 						/>
