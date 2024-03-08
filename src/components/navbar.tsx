@@ -33,16 +33,16 @@ const Navbar: React.FC = () => {
 			</div>
             <nav className="md:flex gap-4 hidden text-glossy">
                 <Button variant="link" className="text-xs md:text-sm lg:text-base" onClick={handleScroll('about')}>
-                    About Me
+                    Om meg
                 </Button>
                 <Button variant="link" className="text-xs md:text-sm lg:text-base" onClick={handleScroll('skills')}>
-                    Skills
+                    Egenskaper
                 </Button>
                 <Button variant="link" className="text-xs md:text-sm lg:text-base" onClick={handleScroll('projects')}>
-                    Projects
+                    Prosjekter
                 </Button>
                 <Button variant="link" className="text-xs md:text-sm lg:text-base" onClick={handleScroll('contact')}>
-                    Contact
+                    Kontakt
                 </Button>
             </nav>
             <div className="md:hidden fixed top-1 left-1 z-50">
@@ -53,10 +53,10 @@ const Navbar: React.FC = () => {
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
-                        <DropdownMenuItem onSelect={handleScroll('about')}>About Me</DropdownMenuItem>
-                        <DropdownMenuItem onSelect={handleScroll('skills')}>Skills</DropdownMenuItem>
-                        <DropdownMenuItem onSelect={handleScroll('projects')}>Projects</DropdownMenuItem>
-                        <DropdownMenuItem onSelect={handleScroll('contact')}>Contact</DropdownMenuItem>
+                        <DropdownMenuItem onSelect={handleScroll('about')}>Om meg</DropdownMenuItem>
+                        <DropdownMenuItem onSelect={handleScroll('skills')}>Egenskaper</DropdownMenuItem>
+                        <DropdownMenuItem onSelect={handleScroll('projects')}>Prosjekter</DropdownMenuItem>
+                        <DropdownMenuItem onSelect={handleScroll('contact')}>Kontakt</DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>

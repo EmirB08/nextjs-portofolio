@@ -25,8 +25,8 @@ const ContactForm: React.FC = () => {
 			// this is from the formspree hook
 			toast({
 				variant: "default",
-				title: "Success!",
-				description: "Your message has been sent successfully.",
+				title: "Suksess!",
+				description: "Meldingen har blitt sendt :)",
 			});
 			resetFormFields();
 		}
@@ -43,9 +43,9 @@ const ContactForm: React.FC = () => {
 		if (!name || !email || !message) {
 			toast({
 				variant: "destructive",
-				title: "Missing Information",
-				description: "Please fill out all fields before submitting.",
-				action: <ToastAction altText="Try again">Try again</ToastAction>,
+				title: "Manglende felt!",
+				description: "Vennligst fyll ut alle feltene.",
+				action: <ToastAction altText="Try again">Prøv igjen</ToastAction>,
 			});
 			return;
 		}
@@ -59,9 +59,9 @@ const ContactForm: React.FC = () => {
 	return (
 		<div className="space-y-8">
 			<div className="space-y-2">
-				<h2 id="contact" className="text-4xl font-bold mb-1 mt-32 dark:text-teal-600 text-teal-800">Contact</h2>
+				<h2 id="contact" className="text-4xl font-bold mb-1 mt-32 dark:text-teal-600 text-teal-800">Kontakt</h2>
 				<p className="text-gray-900 dark:text-gray-300 font-light">
-					Send me a message or contact me on:
+					Send meg en melding eller kontakt meg på:
 				</p>
 				<ul className="list-none p-0">
 					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 dark:before:bg-teal-600 before:bg-teal-800 before:rounded-sm">
@@ -105,28 +105,28 @@ const ContactForm: React.FC = () => {
 			<form onSubmit={onSubmit} method="POST">
 				<div className="space-y-4">
 					<div className="space-y-2">
-						<Label htmlFor="name">Name</Label>
-						<Input id="name" placeholder="Enter your name" name="name" />
+						<Label htmlFor="name">Navn</Label>
+						<Input id="name" placeholder="" name="name" />
 					</div>
 					<div className="space-y-2">
-						<Label htmlFor="email">Email</Label>
+						<Label htmlFor="email">Epost</Label>
 						<Input
 							id="email"
-							placeholder="Enter your email"
+							placeholder=""
 							type="email"
 							name="email"
 						/>
 					</div>
 					<div className="space-y-2">
-						<Label htmlFor="message">Message</Label>
+						<Label htmlFor="message">Melding</Label>
 						<Textarea
 							className="min-h-[100px]"
 							id="message"
-							placeholder="Enter your message"
+							placeholder=""
 							name="message"
 						/>
 					</div>
-					<Button type="submit">Submit</Button>
+					<Button type="submit">Send</Button>
 				</div>
 			</form>
 		</div>

@@ -18,16 +18,36 @@ const Home: React.FC = () => {
 				<h2
 					id="about"
 					className="text-4xl font-bold mb-1 bg-clip-text dark:text-teal-600 text-teal-800">
-					Emir Baftiarovic - Front-End Developer
+					Emir Baftiarovic - Webutvikler
 				</h2>
-				<p className="text-sm md:text-sm lg:text-base mt-2 text-gray-950 dark:text-gray-300 mb-32 font-light shadow-transparent">
-					Front-end developer working towards full-stack development.
-					Focused on modern and efficient solutions to web development in both design and code.
+				<ul className="list-none p-0">
+					<li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 dark:before:bg-teal-600 before:bg-teal-800 before:rounded-sm">
+						<a
+							href="https://github.com/EmirB08"
+							target="_blank"
+							className="mx-1 relative hover:underline"
+							style={{
+								textDecorationThickness: "1px",
+								textUnderlineOffset: "4px",
+							}}>
+							GitHub
+						</a>
+					</li>
+					</ul>
+				<p className="text-sm md:text-sm lg:text-sm mt-2 text-gray-950 dark:text-gray-300 mb-32 font-light shadow-transparent">
+					Jeg har nylig fullført del en (teori) av Kodehode, et intensivt
+					front-end kurs. Gjennom dette kurset har jeg tilegnet meg en solid
+					forståelse av verktøy som er essensielle for moderne webutvikling. Det
+					jeg har likt best har vært å jobbe med JavaScript/TypeScript og
+					React/Vite. Jeg er interessert i både front-end og back-end og jobber
+					nå med å få bedre forståelse for back-end med frameworks som
+					Next.js/Express.js og med UI frameworks som JoyUI, Radix og Shadcn/ui
+					for front-end design.
 				</p>
 				<h2
 					id="skills"
 					className="text-4xl text-glossy font-bold mb-1 bg-clip-text dark:text-teal-600 text-teal-800">
-					Skills
+					Egenskaper
 				</h2>
 				<SkillsAccordion />
 
@@ -35,7 +55,7 @@ const Home: React.FC = () => {
 					<h2
 						id="projects"
 						className="text-4xl text-glossy font-bold mt-32 bg-clip-text dark:text-teal-600 text-teal-800 mb-4">
-						Projects
+						Prosjekter
 					</h2>
 					<Projects />
 				</div>

@@ -8,22 +8,22 @@ import {
 const SkillsAccordion = () => (
 	<Accordion type="single" collapsible className="w-full">
 		<AccordionItem value="item-1">
-			<AccordionTrigger>Front-end</AccordionTrigger>
+			<AccordionTrigger>Frontend</AccordionTrigger>
 			<AccordionContent>
 				<p className="text-gray-900 dark:text-gray-300 font-light text-md">
-					Experienced with{" "}
+					Har erfaring med{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						JavaScript/TypeScript
 					</span>{" "}
-					and building web applications using{" "}
+					og utvikling av webapplikasjoner med{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						React/Vite
 					</span>{" "}
-					and{" "}
+					og{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						Next.js
 					</span>
-					. For UX/UI I have focused on learning component libraries like{" "}
+					. Jeg har også erfaring med komponentbiblioteker som{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						MUI
 					</span>
@@ -31,11 +31,11 @@ const SkillsAccordion = () => (
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						JoyUI
 					</span>
-					, and{" "}
+					, og{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						shadcn/ui
 					</span>{" "}
-					for minimalist & responsive web design and{" "}
+					for minimalistisk og responsiv webdesign og{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						Tailwind CSS
 					</span>{" "}
@@ -44,40 +44,40 @@ const SkillsAccordion = () => (
 			</AccordionContent>
 		</AccordionItem>
 		<AccordionItem value="item-2">
-			<AccordionTrigger>Back-end</AccordionTrigger>
+			<AccordionTrigger>Backend</AccordionTrigger>
 			<AccordionContent>
-				<p className="text-gray-900 dark:text-gray-300 font-light text-">
-					I am currently focused on learning{" "}
+				<p className="text-gray-900 dark:text-gray-300 font-light text-md">
+					Jeg er for tiden fokusert på å lære meg{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						Node.js/Express.js
 					</span>{" "}
-					and{" "}
+					og{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						MongoDB/PostgreSQL
-					</span>
-					for database management. I am also looking to get into{" "}
+					</span>{" "}
+					for databasestyring. Jeg ønsker også å lære meg{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
-						C#{" "}
-					</span>
-					and{" "}
+						C#
+					</span>{" "}
+					og{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
 						ASP.NET/.NET
-					</span>
-					for back-end application development.
+					</span>{" "}
+					for backend-applikasjonsutvikling.
 				</p>
 			</AccordionContent>
 		</AccordionItem>
 		<AccordionItem value="item-3">
-			<AccordionTrigger>Other</AccordionTrigger>
+			<AccordionTrigger>Annet</AccordionTrigger>
 			<AccordionContent>
 				<p className="text-gray-900 dark:text-gray-300 font-light text-md">
-					As a personal hobby I have also been learning{" "}
+					Jeg kan også litt{" "}
 					<span className="dark:text-teal-600 text-teal-800 font-medium">
-					Lua
+						Lua
 					</span>{" "}
-					to develop WoW Addons. I also have a strong interest in A.I tools like
-					Stable Diffusion for image generation and Topaz Labs for image & video
-					upscaling using A.I.
+					som jeg bruker for å lage WoW Addons. Jeg er ellers interessert i A.I verktøy
+					som Stable Diffusion for bildegenerering og Topaz Labs for
+					oppskalering av bilder og videoer.
 				</p>
 			</AccordionContent>
 		</AccordionItem>
