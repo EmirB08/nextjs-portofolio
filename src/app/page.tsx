@@ -36,7 +36,7 @@ const Home: React.FC = () => {
 					</ul>
 				<p className="text-sm md:text-sm lg:text-sm mt-2 text-gray-950 dark:text-gray-300 mb-32 font-light shadow-transparent">
 					Jeg har nylig fullført del en (teori) av Kodehode, et intensivt
-					front-end kurs. Gjennom dette kurset har jeg tilegnet meg en solid
+					frontend kurs. Gjennom dette kurset har jeg tilegnet meg en solid
 					forståelse av verktøy som er essensielle for moderne webutvikling. Det
 					jeg har likt best har vært å jobbe med JavaScript/TypeScript og
 					React/Vite. Jeg er interessert i både frontend og backend og jobber
