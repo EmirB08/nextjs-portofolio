@@ -34,7 +34,7 @@ const Home: React.FC = () => {
 						</a>
 					</li>
 					</ul>
-				<p className="text-sm md:text-sm lg:text-sm mt-2 text-gray-950 dark:text-gray-300 mb-32 font-light shadow-transparent">
+				<p className="text-sm md:text-sm lg:text-sm mt-2 text-gray-950 dark:text-gray-300 mb-16 font-light shadow-transparent">
 					Jeg har nylig fullført del en (teori) av Kodehode, et intensivt
 					frontend kurs. Gjennom dette kurset har jeg tilegnet meg en solid
 					forståelse av verktøy som er essensielle for moderne webutvikling. Det
@@ -51,10 +51,10 @@ const Home: React.FC = () => {
 				</h2>
 				<SkillsAccordion />
 
-				<div className="mt-32">
+				<div className="mt-16">
 					<h2
 						id="projects"
-						className="text-4xl text-glossy font-bold mt-32 bg-clip-text dark:text-teal-600 text-teal-800 mb-4">
+						className="text-4xl text-glossy font-bold mt-16 bg-clip-text dark:text-teal-600 text-teal-800 mb-4">
 						Prosjekter
 					</h2>
 					<Projects />
