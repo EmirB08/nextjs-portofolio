@@ -1,3 +1,4 @@
+"use client";
 import {
   Card,
   CardContent,
@@ -8,6 +9,7 @@ import Image from "next/image";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { useTheme } from "next-themes";
 
 const projectList = [
   {
@@ -15,7 +17,10 @@ const projectList = [
     title: "Elfly/NEA Map Tool",
     description:
       "En kartløsning for Elfly for visualisering og analyse av potensialet for elektrisk flygning.",
-    imageSrc: "/media/MapTool.png",
+    imageSrc: {
+      light: "/media/MapTool-light.png",
+      dark: "/media/MapTool.png",
+    },
     projectLink: "https://map.nordicnea.com/",
     githubLink: "https://gitlab.com/el-fly/map_web_app",
   },
@@ -40,39 +45,51 @@ const projectList = [
 ];
 
 const Projects = () => {
+  const { resolvedTheme } = useTheme();
+
   return (
     <main>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-4">
-        {projectList.map((project, id) => (
-          <Card
-            key={id}
-            className="h-full flex flex-col hover:bg-gray-100 dark:hover:bg-slate-900 transition-colors duration-300 overflow-hidden"
-          >
-            <Link href={project.projectLink} passHref target="_blank">
-              <div className="relative flex aspect-square w-full group cursor-pointer justify-center items-center overflow-hidden">
-                <Image
-                  alt={project.title}
-                  className="object-fit w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110 dark:brightness-75"
-                  src={project.imageSrc}
-                  layout="fill"
-                  sizes="50%"
-                />
+        {projectList.map((project, id) => {
+          // Determine which image source to use
+          const imageSrc =
+            typeof project.imageSrc === "object"
+              ? resolvedTheme === "dark"
+                ? project.imageSrc.dark
+                : project.imageSrc.light
+              : project.imageSrc;
+
+          return (
+            <Card
+              key={id}
+              className="h-full flex flex-col hover:bg-gray-100 dark:hover:bg-slate-900 transition-colors duration-300 overflow-hidden"
+            >
+              <Link href={project.projectLink} passHref target="_blank">
+                <div className="relative flex aspect-square w-full group cursor-pointer justify-center items-center overflow-hidden">
+                  <Image
+                    alt={project.title}
+                    className="object-fit w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110 dark:brightness-75"
+                    src={imageSrc}
+                    layout="fill"
+                    sizes="50%"
+                  />
+                </div>
+              </Link>
+              <Separator />
+              <CardContent className="space-y-2 flex-grow mt-6">
+                <CardTitle>{project.title}</CardTitle>
+                <CardDescription>{project.description}</CardDescription>
+              </CardContent>
+              <div className="flex space-x-2 p-4">
+                {project.githubLink && (
+                  <Link href={project.githubLink} passHref target="_blank">
+                    <GitHubLogoIcon className="h-6 w-6 text-teal-800 dark:text-teal-600 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110" />
+                  </Link>
+                )}
               </div>
-            </Link>
-            <Separator />
-            <CardContent className="space-y-2 flex-grow mt-6">
-              <CardTitle>{project.title}</CardTitle>
-              <CardDescription>{project.description}</CardDescription>
-            </CardContent>
-            <div className="flex space-x-2 p-4">
-              {project.githubLink && (
-                <Link href={project.githubLink} passHref target="_blank">
-                  <GitHubLogoIcon className="h-6 w-6 text-teal-800 dark:text-teal-600 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110" />
-                </Link>
-              )}
-            </div>
-          </Card>
-        ))}
+            </Card>
+          );
+        })}
       </div>
     </main>
   );
