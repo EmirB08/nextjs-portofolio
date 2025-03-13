@@ -1,4 +1,3 @@
-"use client";
 import {
   Card,
   CardContent,
@@ -9,7 +8,7 @@ import Image from "next/image";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import { useTheme } from "next-themes";
+
 
 const projectList = [
   {
@@ -17,10 +16,7 @@ const projectList = [
     title: "Elfly/NEA Map Tool",
     description:
       "En kartløsning for Elfly for visualisering og analyse av potensialet for elektrisk flygning.",
-    imageSrc: {
-      light: "/media/MapTool-light.png",
-      dark: "/media/MapTool.png",
-    },
+    imageSrc: "/media/MapTool-light.png",
     projectLink: "https://map.nordicnea.com/",
     githubLink: "https://gitlab.com/el-fly/map_web_app",
   },
@@ -45,20 +41,10 @@ const projectList = [
 ];
 
 const Projects = () => {
-  const { resolvedTheme } = useTheme();
-
   return (
     <main>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-4">
         {projectList.map((project, id) => {
-          // Determine which image source to use
-          const imageSrc =
-            typeof project.imageSrc === "object"
-              ? resolvedTheme === "dark"
-                ? project.imageSrc.dark
-                : project.imageSrc.light
-              : project.imageSrc;
-
           return (
             <Card
               key={id}
@@ -69,7 +55,7 @@ const Projects = () => {
                   <Image
                     alt={project.title}
                     className="object-fit w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110 dark:brightness-75"
-                    src={imageSrc}
+                    src={project.imageSrc}
                     layout="fill"
                     sizes="50%"
                   />
