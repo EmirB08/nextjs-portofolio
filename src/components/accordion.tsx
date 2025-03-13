@@ -11,7 +11,7 @@ const SkillsAccordion = () => (
       <AccordionTrigger>Frontend</AccordionTrigger>
       <AccordionContent>
         <p className="text-gray-900 dark:text-gray-300 font-light text-md">
-          Har erfaring med{" "}
+          Erfaring med{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
             JavaScript/TypeScript
           </span>{" "}
@@ -21,25 +21,21 @@ const SkillsAccordion = () => (
           </span>{" "}
           og{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
-            Next.js
+            Next
           </span>
-          . Jeg har god forståelse for integrasjon mot eksterne APIer og
-          datakilder, inkludert{" "}
+          , med integrasjon mot eksterne APIer og databaser, inkludert{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
             Google Maps Platform
           </span>
-          . Jeg har også solid forståelse for effektiv og responsivt webdesign
-          med bruk av{" "}
-          <span className="dark:text-teal-600 text-teal-800 font-medium">
-            CSS
-          </span>{" "}
-          og erfaring med ulike komponentbiblioteker som{" "}
+          . Jeg har også god forståelse for utvikling av effektivt og
+          responsivt webdesign og erfaring med ulike komponentbiblioteker
+          som{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
             Material UI
           </span>
           ,{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
-            Joy UI
+            Radix UI
           </span>{" "}
           og{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">

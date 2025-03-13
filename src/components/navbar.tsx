@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
         <header className="flex items-center justify-between pb-20">
 			<div className="invisible md:visible">
             <Avatar>
-			<AvatarImage src="/media/gigachadoncomputer.jpeg" />
+			<AvatarImage src="/media/mountain-1.png" />
 			<AvatarFallback>EB</AvatarFallback>
             </Avatar>
 			</div>

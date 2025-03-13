@@ -19,7 +19,7 @@ const Home: React.FC = () => {
           id="about"
           className="text-4xl font-bold mb-1 bg-clip-text dark:text-teal-600 text-teal-800"
         >
-          Emir Baftiarovic - Fullstackutvikler
+          Emir Baftiarovic - Fullstack-utvikler
         </h2>
         <ul className="list-none p-0">
           <li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 dark:before:bg-teal-600 before:bg-teal-800 before:rounded-sm">
@@ -35,17 +35,30 @@ const Home: React.FC = () => {
               GitHub
             </a>
           </li>
+          <li className="relative pl-3 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 dark:before:bg-teal-600 before:bg-teal-800 before:rounded-sm">
+            <a
+              href="https://gitlab.com/emir9155412"
+              target="_blank"
+              className="mx-1 relative hover:underline"
+              style={{
+                textDecorationThickness: "1px",
+                textUnderlineOffset: "4px",
+              }}
+            >
+              GitLab
+            </a>
+          </li>
         </ul>
         <p className="text-sm md:text-sm lg:text-sm mt-1 text-gray-950 dark:text-gray-300 mb-12 font-light shadow-transparent">
-          Fullstackutvikler med interesse for å skape interaktive og effektive
-          webapplikasjoner med moderne verktøy. Jeg fullførte Kodehode, et
-          intensivt 6 måneders frontend kurs, i 2024 hvor jeg raskt fikk sansen
-          for JavaScript og React. Etter kurset fikk jeg praksisplass hos Elfly
-          Group i Bergen hvor jeg drev med fullstack utvikling av webbaserte
-          kartløsninger for både Elfly og NEA (Nordic Electric Aviation). Med
-          denne erfaringen har jeg utviklet solid kompetanse innen både
-          frontend- og backend-utvikling, og ser nå etter muligheter til å vokse
-          videre som utvikler i et team med fokus på kvalitet og innovasjon.
+          Fullstack-utvikler med interesse for å skape interaktive og effektive
+          webapplikasjoner med moderne webteknologier. Jeg har fullført
+          Kodehode, et intensivt 6 måneders frontend kurs, hvor jeg raskt fikk
+          interesse for JavaScript og React. Etter kurset fikk jeg praksisplass
+          hos Elfly i Bergen hvor jeg har jobbet med fullstack-utvikling av
+          webbaserte kartløsninger. Med denne erfaringen har jeg utviklet solid
+          kompetanse innen både frontend-utvikling og backend-utvikling, og ser
+          nå etter muligheter til å vokse videre som utvikler i et team med
+          fokus på kvalitet og innovasjon.
         </p>
         <h2
           id="skills"
