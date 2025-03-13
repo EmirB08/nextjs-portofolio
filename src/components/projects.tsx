@@ -15,7 +15,7 @@ const projectList = [
     id: 1,
     title: "Elfly/NEA Map Tool",
     description:
-      "En kartløsning for Elfly for visualisering og analyse av potensialet for elektrisk flygning.",
+      "En kartløsning for Elfly og NEA for visualisering, analyse og kartlegging av potensielle markeder for elektrisk flygning.",
     imageSrc: "/media/MapTool-light.png",
     projectLink: "https://map.nordicnea.com/",
     githubLink: "https://gitlab.com/el-fly/map_web_app",
@@ -24,7 +24,7 @@ const projectList = [
     id: 2,
     title: "Enhetsregisteret",
     description:
-      "En gjenskapning av Brønnøysundregistrene sin API for enhetsregisteret laget med React/Vite og JoyUI.",
+      "En gjenskapning av Brønnøysundregistrene sin API for enhetsregisteret laget med React.",
     imageSrc: "/media/Enhetsregisteret.png",
     projectLink: "https://cool-gumption-a40c50.netlify.app/",
     githubLink: "https://github.com/EmirB08/vite-react-project-3",
@@ -33,7 +33,7 @@ const projectList = [
     id: 3,
     title: "Quiz Prosjekt",
     description:
-      "Prosjektleder for en oppgave hvor vi laget en quiz med ulike tema som HTML/CSS/JS.",
+      "Prosjektleder for en oppgave der vi utviklet en quiz med ulike temaer laget med JavaScript.",
     imageSrc: "/media/Quiz.png",
     projectLink: "https://emirb08.github.io/gruppeprosjekt-quiz/",
     githubLink: "https://github.com/EmirB08/gruppeprosjekt-quiz",

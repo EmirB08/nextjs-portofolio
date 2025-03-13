@@ -90,20 +90,23 @@ const SkillsAccordion = () => (
       <AccordionTrigger>Annet</AccordionTrigger>
       <AccordionContent>
         <p className="text-gray-900 dark:text-gray-300 font-light text-md">
-          God forståelse for bruk av{" "}
+          Erfaring med bruk av utviklerverktøy som{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
             Git
           </span>{" "}
-          for versjonskontroll, og terminal i både UNIX-baserte
-          operativsystemer og Windows ved bruk av{" "}
+		  og{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
-            Bash/zsh
+            Docker
+          </span>
+          , og veldig komfortabel med CLI i{" "}
+          <span className="dark:text-teal-600 text-teal-800 font-medium">
+            Bash/Zsh
           </span>{" "}
           og{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
-            Powershell
+            PowerShell
           </span>
-          . Erfaring med administrering og konfigurering av både{" "}
+          . Erfaring med systemadministrasjon og konfigurering av{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
             macOS
           </span>
@@ -122,7 +125,7 @@ const SkillsAccordion = () => (
           og{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
             AHK
-          </span>
+          </span>{" "}
           .
         </p>
       </AccordionContent>
