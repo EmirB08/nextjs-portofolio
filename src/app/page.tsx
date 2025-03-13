@@ -52,13 +52,7 @@ const Home: React.FC = () => {
         <p className="text-sm md:text-sm lg:text-sm mt-1 text-gray-950 dark:text-gray-300 mb-12 font-light shadow-transparent">
           Fullstack-utvikler med interesse for å skape interaktive og effektive
           webapplikasjoner med moderne webteknologier. Jeg har fullført
-          Kodehode, et intensivt 6 måneders frontend kurs, hvor jeg raskt fikk
-          interesse for JavaScript og React. Etter kurset fikk jeg praksisplass
-          hos Elfly i Bergen hvor jeg har jobbet med fullstack-utvikling av
-          webbaserte kartløsninger. Med denne erfaringen har jeg utviklet solid
-          kompetanse innen både frontend-utvikling og backend-utvikling, og ser
-          nå etter muligheter til å vokse videre som utvikler i et team med
-          fokus på kvalitet og innovasjon.
+          Kodehode, et intensivt kurs i frontend-utvikling, hvor jeg raskt fikk interesse for JavaScript og React. Etter kurset fikk jeg praksisplass hos Elfly i Bergen hvor jeg jobbet med fullstack-utvikling av webbaserte kartløsninger. Med denne erfaringen har jeg utviklet solid kompetanse innenfor både frontend-utvikling og backend-utvikling, og ser nå etter muligheter til å vokse videre som utvikler med fokus på kvalitet og innovasjon.
         </p>
         <h2
           id="skills"
