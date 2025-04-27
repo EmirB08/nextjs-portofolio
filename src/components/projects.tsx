@@ -9,7 +9,6 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 
-
 const projectList = [
   {
     id: 1,
@@ -26,7 +25,7 @@ const projectList = [
     description:
       "En gjenskapning av Brønnøysundregistrene sin API for enhetsregisteret laget med React.",
     imageSrc: "/media/Enhetsregisteret.png",
-    projectLink: "https://cool-gumption-a40c50.netlify.app/",
+    projectLink: "https://bregisteret.vercel.app/",
     githubLink: "https://github.com/EmirB08/vite-react-project-3",
   },
   {
@@ -48,13 +47,13 @@ const Projects = () => {
           return (
             <Card
               key={id}
-              className="h-full flex flex-col hover:bg-gray-100 dark:hover:bg-slate-900 transition-colors duration-300 overflow-hidden"
+              className="h-full flex flex-col hover:bg-gray-100 dark:hover:bg-slate-900 transition-colors duration-300 overflow-hidden ring-2 ring-gray-300 dark:ring-slate-600"
             >
               <Link href={project.projectLink} passHref target="_blank">
                 <div className="relative flex aspect-square w-full group cursor-pointer justify-center items-center overflow-hidden">
                   <Image
                     alt={project.title}
-                    className="object-fit w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110 dark:brightness-75"
+                    className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110 dark:brightness-75"
                     src={project.imageSrc}
                     layout="fill"
                     sizes="50%"

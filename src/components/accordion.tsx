@@ -94,7 +94,7 @@ const SkillsAccordion = () => (
           <span className="dark:text-teal-600 text-teal-800 font-medium">
             Git
           </span>{" "}
-		  og{" "}
+		      og{" "}
           <span className="dark:text-teal-600 text-teal-800 font-medium">
             Docker
           </span>

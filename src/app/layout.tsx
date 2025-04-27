@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Emir Baftiarovic - Portfolio",
+	title: "Emir Baftiarovic",
 	description: "Portfolio",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="dark"
+					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange>
 					{children}
